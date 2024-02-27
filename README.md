@@ -142,7 +142,7 @@ Sets `+game_type` in `srcds_run` parameters.
 
 ##### `VIETNAM_GAME_MODE`
 
-Default: `1`
+Default: `0`
 
 Game Mode
 
@@ -325,7 +325,7 @@ Once the server has been installed, the container will check for a server update
 
 > Coming very soon ! ()
 
-### Manually
+### Manuallygame_type
 
 Restart the container with [`docker restart`](https://docs.docker.com/engine/reference/commandline/restart/).
 
