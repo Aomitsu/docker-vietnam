@@ -117,7 +117,7 @@ start() {
     -tickrate "${VIETNAM_TICKRATE-64}" \
     -maxplayers_override "${VIETNAM_MAX_PLAYERS-16}" \
     +game_type "${VIETNAM_GAME_TYPE-0}" \
-    +game_mode "${VIETNAM_GAME_MODE-1}" \
+    +game_mode "${VIETNAM_GAME_MODE-0}" \
     +mapgroup "${VIETNAM_MAP_GROUP-0}" \
     +map "${VIETNAM_MAP-mcv_port}" \
     +rcon_password "${VIETNAM_RCON_PW-changeme}" \
