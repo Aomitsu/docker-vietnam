@@ -103,7 +103,9 @@ start() {
 
   set -x
 
-  exec $server_dir/srcds_run_x64 \
+  cd $server_dir
+
+  exec ./srcds_run_x64 \
     -secure \
     -game vietnam \
     -console \
