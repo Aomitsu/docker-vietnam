@@ -84,7 +84,7 @@ start() {
     additionalParams+=" +tv_maxclients ${VIETNAM_TV_MAXCLIENTS-10}"
     additionalParams+=" +tv_maxrate ${VIETNAM_TV_MAXRATE-0}"
     additionalParams+=" +tv_overridemaster ${VIETNAM_TV_OVERRIDEMASTER-0}"
-    additionalParams+=" +tv_snapshotrate ${VIETNAM_TV_SNAPSHOTRATE-128}"
+    additionalParams+=" +tv_snapshotrate ${VIETNAM_TV_SNAPSHOTRATE-64}"
     additionalParams+=" +tv_timeout ${VIETNAM_TV_TIMEOUT-60}"
     additionalParams+=" +tv_transmitall ${VIETNAM_TV_TRANSMITALL-1}"
 
@@ -103,7 +103,8 @@ start() {
 
   set -x
 
-  exec $server_dir/srcds_run \
+  exec $server_dir/srcds_run_x64 \
+    -secure \
     -game vietnam \
     -console \
     -norestart \
@@ -115,7 +116,7 @@ start() {
     -maxplayers_override "${VIETNAM_MAX_PLAYERS-16}" \
     +game_type "${VIETNAM_GAME_TYPE-0}" \
     +game_mode "${VIETNAM_GAME_MODE-1}" \
-    +mapgroup "${VIETNAM_MAP_GROUP-1}" \
+    +mapgroup "${VIETNAM_MAP_GROUP-0}" \
     +map "${VIETNAM_MAP-mcv_port}" \
     +rcon_password "${VIETNAM_RCON_PW-changeme}" \
     $additionalParams \
