@@ -325,7 +325,7 @@ Once the server has been installed, the container will check for a server update
 
 > Coming very soon ! ()
 
-### Manuallygame_type
+### Manually
 
 Restart the container with [`docker restart`](https://docs.docker.com/engine/reference/commandline/restart/).
 
